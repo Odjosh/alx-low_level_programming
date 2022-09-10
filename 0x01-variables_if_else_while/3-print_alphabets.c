@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
-* main - prints the alphabet in lowercase, followed by a new line
+*main - Entry point
 *
-* Return: Always 0
+*Return: Always 0
 */
+
 int main(void)
 {
 	char letter;
@@ -12,7 +13,11 @@ int main(void)
 	for (letter = 'a'; letter <= 'z'; letter++)
 		putchar(letter);
 
-	putchar('\n'); /* this is an ascii code for new line*/
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
+
+	putchar('\n');
 
 	return (0);
 }
+
